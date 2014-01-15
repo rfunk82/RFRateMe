@@ -22,6 +22,13 @@ Features
 - If the user chooses "Rate now" or "No, thanks" alert won't be shown again.
 - If the user chooses "Remind me later" they will get the alert after 3 (Default) days.
 
+Configuration
+========
+
+#define kNumberOfDaysUntilShowAgain 3
+#define kAppStoreAddress @"https://itunes.apple.com/us/app/jobsy/id687059035"
+#define kAppName @"MyApp"
+
 Created By
 ==========
 
