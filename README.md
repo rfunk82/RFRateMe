@@ -26,7 +26,9 @@ Configuration
 =============
 
 `#define kNumberOfDaysUntilShowAgain 3`
+
 `#define kAppStoreAddress @"https://itunes.apple.com/us/app/jobsy/id687059035"`
+
 `#define kAppName @"MyApp"`
 
 Created By
