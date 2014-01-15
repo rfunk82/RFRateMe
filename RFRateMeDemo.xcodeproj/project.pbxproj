@@ -21,6 +21,8 @@
 		C74B24A81876161900C7DF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74B248A1876161900C7DF54 /* UIKit.framework */; };
 		C74B24B01876161900C7DF54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C74B24AE1876161900C7DF54 /* InfoPlist.strings */; };
 		C74B24B21876161900C7DF54 /* RFRateMeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B24B11876161900C7DF54 /* RFRateMeDemoTests.m */; };
+		C74B24BD1876162A00C7DF54 /* RFRateMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B24BC1876162A00C7DF54 /* RFRateMe.m */; };
+		C74B24C01876166000C7DF54 /* UIAlertView+NSCookbook.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B24BF1876166000C7DF54 /* UIAlertView+NSCookbook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		C74B24AD1876161900C7DF54 /* RFRateMeDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFRateMeDemoTests-Info.plist"; sourceTree = "<group>"; };
 		C74B24AF1876161900C7DF54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C74B24B11876161900C7DF54 /* RFRateMeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFRateMeDemoTests.m; sourceTree = "<group>"; };
+		C74B24BB1876162A00C7DF54 /* RFRateMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRateMe.h; sourceTree = "<group>"; };
+		C74B24BC1876162A00C7DF54 /* RFRateMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRateMe.m; sourceTree = "<group>"; };
+		C74B24BE1876166000C7DF54 /* UIAlertView+NSCookbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NSCookbook.h"; sourceTree = "<group>"; };
+		C74B24BF1876166000C7DF54 /* UIAlertView+NSCookbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NSCookbook.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 		C74B247A1876161900C7DF54 = {
 			isa = PBXGroup;
 			children = (
+				C74B24BE1876166000C7DF54 /* UIAlertView+NSCookbook.h */,
+				C74B24BF1876166000C7DF54 /* UIAlertView+NSCookbook.m */,
+				C74B24BB1876162A00C7DF54 /* RFRateMe.h */,
+				C74B24BC1876162A00C7DF54 /* RFRateMe.m */,
 				C74B248C1876161900C7DF54 /* RFRateMeDemo */,
 				C74B24AB1876161900C7DF54 /* RFRateMeDemoTests */,
 				C74B24851876161900C7DF54 /* Frameworks */,
@@ -249,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74B24C01876166000C7DF54 /* UIAlertView+NSCookbook.m in Sources */,
 				C74B249D1876161900C7DF54 /* ViewController.m in Sources */,
 				C74B24971876161900C7DF54 /* AppDelegate.m in Sources */,
 				C74B24931876161900C7DF54 /* main.m in Sources */,
+				C74B24BD1876162A00C7DF54 /* RFRateMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
