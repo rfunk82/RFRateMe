@@ -4,7 +4,7 @@ RFRateMe
 RFRateMe will help you promote your iPhone/iPad app without irritating your users. It's very simple to install, use and configure (If you need to change the default behavior).
 
 
-![RFRateMe](http://i.imgur.com/0bORSNl.png)
+![RFRateMe](http://i.imgur.com/FppICdE.png)
 
 How To Get Started
 ==================
