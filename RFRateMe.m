@@ -51,7 +51,7 @@
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(kAppName, @"")
                                                         message:[NSString stringWithFormat:@"If you enjoy %@, would you mind taking a moment to rate it? It won’t take more than a minute. Thanks for your support!",kAppName]
                                                        delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"No, thanks", @"")
+                                              cancelButtonTitle:NSLocalizedString(@"Never ask me again", @"")
                                               otherButtonTitles:NSLocalizedString(@"Rate it now", @""),NSLocalizedString(@"Remind me later",@""), nil];
     
     [alertView showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
