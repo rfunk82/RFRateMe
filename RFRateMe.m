@@ -87,4 +87,22 @@
     }];
 }
 
++(void)showRateAlertAfterTimesOpened:(int)times {
+    //Thanks @kylnew for feedback and idea!
+    
+    BOOL rateCompleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"RateCompleted"];
+    if (rateCompleted) return;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int timesOpened = [defaults integerForKey:@"timesOpened"];
+    [defaults setInteger:timesOpened+1 forKey:@"timesOpened"];
+    [defaults synchronize];
+    NSLog(@"App has been opened %d times", [defaults integerForKey:@"timesOpened"]);
+    if([defaults integerForKey:@"timesOpened"] >= times){
+        [RFRateMe showRateAlert];
+    }
+
+
+}
+
 @end

@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface RFRateMe : NSObject
+
 +(void)showRateAlert;
++(void)showRateAlertAfterTimesOpened:(int)times;
+
 @end
