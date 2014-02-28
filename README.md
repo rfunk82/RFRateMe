@@ -18,7 +18,7 @@ How To Get Started
 
 or you can also show the alert after X times of using the app by simply calling the following method in your appDelegate didFinishLaunchingWithOptions:
 
-5. +(void)showRateAlertAfterTimesOpened:(int)times
++(void)showRateAlertAfterTimesOpened:(int)times
 
       `[RFRateMe showRateAlertAfterTimesOpened:3];`
      
