@@ -15,6 +15,12 @@ How To Get Started
 4.  Call the class method whenever you want to show the alert:
   
      `[RFRateMe showRateAlert];`
+
+or you can also show the alert after X times of using the app by simply calling the following method in your appDelegate didFinishLaunchingWithOptions:
+
+5. +(void)showRateAlertAfterTimesOpened:(int)times
+
+      `[RFRateMe showRateAlertAfterTimesOpened:3];`
      
 Features
 ========
