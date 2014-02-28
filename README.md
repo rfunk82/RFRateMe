@@ -20,7 +20,7 @@ or you can also show the alert after X times of using the app by simply calling 
 
 +(void)showRateAlertAfterTimesOpened:(int)times
 
-      `[RFRateMe showRateAlertAfterTimesOpened:3];`
+      [RFRateMe showRateAlertAfterTimesOpened:3];
      
 Features
 ========
