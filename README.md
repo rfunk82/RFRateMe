@@ -25,7 +25,7 @@ or you can also show the alert after X times of using the app by simply calling 
 Features
 ========
 
-- If the user chooses "Rate now" or "No, thanks" alert won't be shown again.
+- If the user chooses "Rate now" or "Never ask me again" alert won't be shown again.
 - If the user chooses "Remind me later" they will get the alert after 3 (Default) days.
 
 Configuration
