@@ -42,7 +42,7 @@ Created By
 
 Ricardo Funk ([@rfunk82](http://www.twitter.com/rfunk82))
 
-UIAlertView+NSCookbook Provided by NCCookbook
+UIAlertView+NSCookbook Provided by NSCookbook
 
 License
 =======
