@@ -42,7 +42,7 @@ Podfile
 
 ```
 platform :ios, '7.0'
-pod "RFRateMe", "~> 1.0.o"
+pod "RFRateMe", "~> 1.0.0"
 ```
 
 Created By
