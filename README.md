@@ -37,6 +37,14 @@ Configuration
 
 `#define kAppName @"MyApp"`
 
+Podfile
+=======
+
+```
+platform :ios, '7.0'
+pod "RFRateMe", "~> 1.0.o"
+```
+
 Created By
 ==========
 
