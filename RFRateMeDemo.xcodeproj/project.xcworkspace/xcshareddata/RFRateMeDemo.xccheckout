@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5DC32C4E-B725-4477-9176-682FC3E63BEE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RFRateMeDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6BE27D9E-746E-4341-9BCB-7E0E6E116EF1</key>
+		<string>https://github.com/rfunk82/RFRateMe.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RFRateMeDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6BE27D9E-746E-4341-9BCB-7E0E6E116EF1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rfunk82/RFRateMe.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6BE27D9E-746E-4341-9BCB-7E0E6E116EF1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BE27D9E-746E-4341-9BCB-7E0E6E116EF1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RFRateMe</string>
+		</dict>
+	</array>
+</dict>
+</plist>

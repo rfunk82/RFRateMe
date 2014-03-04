@@ -13,9 +13,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     
+    //Option 1 (Show the alert)
+    [RFRateMe showRateAlert];
+    
+    // Option 2 (Show the alert after X amount of times you opened the app)
     [RFRateMe showRateAlertAfterTimesOpened:3];
+    
+    // Option 3 (Show the alert after X amount of days you opened the app for the first time)
+    [RFRateMe showRateAlertAfterDays:7];
     
     return YES;
 }
