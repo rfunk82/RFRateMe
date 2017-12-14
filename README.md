@@ -67,14 +67,13 @@ You should add the following lines into your application `*.plist` file:
 </dict>
 ```
 
-![Info.plist](https://imgur.com/a/A3xzr)
+![Info.plist](https://i.imgur.com/FsrMjHa.png)
 
 Podfile
 =======
 
 ```
-platform :ios, '7.0'
-pod "RFRateMe", :branch => 'settings_updates'
+pod 'RFRateMe'
 ```
 
 Created By
