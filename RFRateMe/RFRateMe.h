@@ -14,5 +14,4 @@
 +(void)showRateAlertAfterTimesOpened:(int)times;
 +(void)showRateAlertAfterDays:(int)days;
 
-
 @end

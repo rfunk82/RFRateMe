@@ -2,26 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>RFRateAlertSettings</key>
-	<dict>
-		<key>RFRateAlertButtons</key>
-		<dict>
-			<key>RFCancelButtonTitle</key>
-			<string>No, thanks</string>
-			<key>RFLaterButtonTitle</key>
-			<string>Remind me later</string>
-			<key>RFRateButtonTitle</key>
-			<string>Rate now</string>
-		</dict>
-		<key>RFNumberOfDaysUntilShowing</key>
-		<integer>3</integer>
-		<key>RFAppStoreApplicationURL</key>
-		<string>https://your.app.url</string>
-		<key>RFRateAlertMessage</key>
-		<string>If you like $(PRODUCT_NAME), please rate it</string>
-		<key>RFRateAlertTitle</key>
-		<string>$(PRODUCT_NAME)</string>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

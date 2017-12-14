@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55DCCE061FE2CCDA00274C06 /* RFRateMeDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55DCCE051FE2CCD900274C06 /* RFRateMeDemo-Info.plist */; };
 		B6151BD318C3FBFD001E9725 /* RFRateMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B6151BD018C3FBFD001E9725 /* RFRateMe.m */; };
 		B6151BD418C3FBFD001E9725 /* UIAlertView+NSCookbook.m in Sources */ = {isa = PBXBuildFile; fileRef = B6151BD218C3FBFD001E9725 /* UIAlertView+NSCookbook.m */; };
 		C74B24871876161900C7DF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74B24861876161900C7DF54 /* Foundation.framework */; };
 		C74B24891876161900C7DF54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74B24881876161900C7DF54 /* CoreGraphics.framework */; };
 		C74B248B1876161900C7DF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74B248A1876161900C7DF54 /* UIKit.framework */; };
-		C74B24911876161900C7DF54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C74B248F1876161900C7DF54 /* InfoPlist.strings */; };
 		C74B24931876161900C7DF54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B24921876161900C7DF54 /* main.m */; };
 		C74B24971876161900C7DF54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B24961876161900C7DF54 /* AppDelegate.m */; };
 		C74B249A1876161900C7DF54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74B24981876161900C7DF54 /* Main.storyboard */; };
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55DCCE051FE2CCD900274C06 /* RFRateMeDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RFRateMeDemo-Info.plist"; sourceTree = "<group>"; };
 		B6151BCF18C3FBFD001E9725 /* RFRateMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFRateMe.h; path = RFRateMe/RFRateMe.h; sourceTree = "<group>"; };
 		B6151BD018C3FBFD001E9725 /* RFRateMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFRateMe.m; path = RFRateMe/RFRateMe.m; sourceTree = "<group>"; };
 		B6151BD118C3FBFD001E9725 /* UIAlertView+NSCookbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+NSCookbook.h"; path = "RFRateMe/UIAlertView+NSCookbook.h"; sourceTree = "<group>"; };
@@ -44,8 +45,6 @@
 		C74B24861876161900C7DF54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C74B24881876161900C7DF54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C74B248A1876161900C7DF54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C74B248E1876161900C7DF54 /* RFRateMeDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFRateMeDemo-Info.plist"; sourceTree = "<group>"; };
-		C74B24901876161900C7DF54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C74B24921876161900C7DF54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C74B24941876161900C7DF54 /* RFRateMeDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFRateMeDemo-Prefix.pch"; sourceTree = "<group>"; };
 		C74B24951876161900C7DF54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,8 +135,7 @@
 		C74B248D1876161900C7DF54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C74B248E1876161900C7DF54 /* RFRateMeDemo-Info.plist */,
-				C74B248F1876161900C7DF54 /* InfoPlist.strings */,
+				55DCCE051FE2CCD900274C06 /* RFRateMeDemo-Info.plist */,
 				C74B24921876161900C7DF54 /* main.m */,
 				C74B24941876161900C7DF54 /* RFRateMeDemo-Prefix.pch */,
 			);
@@ -239,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C74B249F1876161900C7DF54 /* Images.xcassets in Resources */,
-				C74B24911876161900C7DF54 /* InfoPlist.strings in Resources */,
+				55DCCE061FE2CCDA00274C06 /* RFRateMeDemo-Info.plist in Resources */,
 				C74B249A1876161900C7DF54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,14 +284,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C74B248F1876161900C7DF54 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C74B24901876161900C7DF54 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		C74B24981876161900C7DF54 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RFRateMeDemo/RFRateMeDemo-Prefix.pch";
 				INFOPLIST_FILE = "RFRateMeDemo/RFRateMeDemo-Info.plist";
@@ -403,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RFRateMeDemo/RFRateMeDemo-Prefix.pch";
 				INFOPLIST_FILE = "RFRateMeDemo/RFRateMeDemo-Info.plist";
