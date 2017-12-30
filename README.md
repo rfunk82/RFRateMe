@@ -9,10 +9,8 @@ RFRateMe will help you promote your iPhone/iPad app without irritating your user
 How To Get Started
 ==================
 
-1.  Drag and drop RFRateMe Class into your project.
-2.  Drag and drop UIAlertView+NSCookbook Class into your project.
-3.  `#import "RFRateMe.h"`
-4.  Call the class method whenever you want to show the alert:
+1.  `#import "RFRateMe.h"`
+2.  Call the class method whenever you want to show the alert:
   
      `[RFRateMe showRateAlert];`
 
@@ -38,18 +36,44 @@ Features
 Configuration
 =============
 
-`#define kNumberOfDaysUntilShowAgain 3`
+You should add the following lines into your application `*.plist` file:
 
-`#define kAppStoreAddress @"https://itunes.apple.com/us/app/jobsy/id687059035"`
+```
+<key>RFRateAlertSettings</key>
+<dict>
+    <key>RFRateAlertButtons</key>
+    <dict>
+        <key>RFCancelButtonTitle</key>
+        <string>No, thanks</string>
+        
+        <key>RFLaterButtonTitle</key>
+        <string>Remind me later</string>
+        
+        <key>RFRateButtonTitle</key>
+        <string>Rate now</string>
+    </dict>
+    
+    <key>RFNumberOfDaysUntilShowing</key>
+    <integer>3</integer>
+    
+    <key>RFAppStoreApplicationURL</key>
+    <string>https://your.app.url</string>
+    
+    <key>RFRateAlertMessage</key>
+    <string>If you like $(PRODUCT_NAME), please rate it</string>
+    
+    <key>RFRateAlertTitle</key>
+    <string>$(PRODUCT_NAME)</string>
+</dict>
+```
 
-`#define kAppName @"MyApp"`
+![Info.plist](https://i.imgur.com/FsrMjHa.png)
 
 Podfile
 =======
 
 ```
-platform :ios, '7.0'
-pod "RFRateMe", "~> 1.0.0"
+pod 'RFRateMe'
 ```
 
 Created By

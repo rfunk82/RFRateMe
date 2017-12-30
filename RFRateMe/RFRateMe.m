@@ -9,13 +9,26 @@
 #import "RFRateMe.h"
 #import "UIAlertView+NSCookbook.h"
 
-#define kNumberOfDaysUntilShowAgain 3
-#define kAppStoreAddress @"https://itunes.apple.com/us/app/jobsy/id687059035"
-#define kAppName @"MyApp"
+#pragma mark - Define dictionary keys
+
+#define settingsKey     @"RFRateAlertSettings"
+#define titleKey        @"RFRateAlertTitle"
+#define messageKey      @"RFRateAlertMessage"
+#define appStoreUrlKey  @"RFAppStoreApplicationURL"
+#define numberOfDaysKey @"RFNumberOfDaysUntilShowing"
+#define buttonsKey      @"RFRateAlertButtons"
+#define cancelButtonKey @"RFCancelButtonTitle"
+#define laterButtonKey  @"RFLaterButtonTitle"
+#define rateButtonKey   @"RFRateButtonTitle"
+
+#pragma mark - Implementation
 
 @implementation RFRateMe
 
+static NSDictionary *settingsDictionary;
+
 +(void)showRateAlert {
+    settingsDictionary = [self getSettingsDictionary];
     
     //If rate was completed, we just return if True
     BOOL rateCompleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"RFRateCompleted"];
@@ -43,16 +56,22 @@
                                                               toDate:endDate
                                                              options:0];
         
-        if ((long)[components day] <= kNumberOfDaysUntilShowAgain) return;
+        long numberOfDays = [settingsDictionary objectForKey:numberOfDaysKey] ? (long) [settingsDictionary objectForKey:numberOfDaysKey] : (long) 3;
+        if ((long)[components day] <= numberOfDays) return;
         
     }
     
     //Show rate alert
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(kAppName, @"")
-                                                        message:[NSString stringWithFormat:@"If you enjoy %@, would you mind taking a moment to rate it? It won’t take more than a minute. Thanks for your support!",kAppName]
+    
+    NSString *title = [settingsDictionary objectForKey:titleKey];
+    NSString *message = [settingsDictionary objectForKey:messageKey];
+    NSDictionary *buttons = [settingsDictionary objectForKey:buttonsKey];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+                                                        message:message
                                                        delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"Never ask me again", @"")
-                                              otherButtonTitles:NSLocalizedString(@"Rate it now", @""),NSLocalizedString(@"Remind me later",@""), nil];
+                                              cancelButtonTitle:[buttons objectForKey:cancelButtonKey]
+                                              otherButtonTitles:[buttons objectForKey:laterButtonKey], [buttons objectForKey:rateButtonKey], nil];
     
     [alertView showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
         
@@ -69,7 +88,7 @@
                 NSLog(@"Rate it now");
                 [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"RFRateCompleted"];
                 [[NSUserDefaults standardUserDefaults] synchronize];
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAppStoreAddress]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[settingsDictionary objectForKey:appStoreUrlKey]]];
                 
                 break;
             case 2:
@@ -142,6 +161,15 @@
     if ((long)[components day] <= times) return;
     
     
+}
+
+#pragma mark - Settings Dictionary initializer
+
++(NSDictionary *)getSettingsDictionary {
+    if (settingsDictionary) {
+        return settingsDictionary;
+    }
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:settingsKey];
 }
 
 @end
